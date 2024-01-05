@@ -1,0 +1,15 @@
+.input {
+  font-size: clamp(0.875rem, 0.648rem + 1.14vw, 1.5rem);
+  padding: clamp(0.875rem, 0.466rem + 2.05vw, 2rem);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  background: #fff;
+  &::placeholder {
+    font-size: clamp(0.875rem, 0.648rem + 1.14vw, 1.5rem) А;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  &:focus-visible {
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+  }
+}

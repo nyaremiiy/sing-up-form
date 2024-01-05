@@ -1,8 +1,10 @@
-form 
+form.form 
   include ../components/title.pug
   .desc Create an account to enjoy all the services without any ads for free!
-  +input('Email Address')
-  +input('Password')(id='js-password')
-  include ../components/button.pug
-  .info Already Have An Account? 
+  .form__inputs 
+    +input('Email Address','email')
+    +input('Password','password')(id='js-password')
+  .form__btn
+    include ../components/button.pug
+  .form__info Already Have An Account? 
     a.link(href="#") Sign In
